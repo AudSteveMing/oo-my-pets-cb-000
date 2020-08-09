@@ -61,6 +61,10 @@ def feed_cats
 end
 
 def sell_pets
+  self.dogs.select {|dog| dog.mood = "nervous"}
+  self.cats.select {|cat| dog.mood = "nervous"}
+
+
 end
 
 def list_pets
