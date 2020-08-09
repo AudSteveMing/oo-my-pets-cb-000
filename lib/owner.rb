@@ -62,7 +62,7 @@ end
 
 def sell_pets
   self.dogs.select {|dog| dog.mood = "nervous"}
-  self.cats.select {|cat| dog.mood = "nervous"}
+  self.cats.select {|cat| cat.mood = "nervous"}
 
 
 end
