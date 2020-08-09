@@ -63,6 +63,8 @@ end
 def sell_pets
   self.dogs.select {|dog| dog.mood = "nervous"}
   self.cats.select {|cat| cat.mood = "nervous"}
+  self.dogs.select {|dog| dog.owner = nil}
+  self.cats.select {|cat| cat.owner = nil }
 
 
 end
