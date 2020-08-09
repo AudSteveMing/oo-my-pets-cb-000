@@ -38,7 +38,6 @@ end
 def buy_cat(name)
   new_owner = Cat.all.find {|cat| cat.name == name}
   new_owner.owner = self if new_owner
-  binding.pry
 end
 
 # def buy_cat(name)
@@ -46,6 +45,8 @@ end
 #   end
 
 def buy_dog
+  binding.pry
+
 end
 
 def walk_dogs
