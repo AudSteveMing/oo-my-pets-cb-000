@@ -43,10 +43,9 @@ end
 # def buy_cat(name)
 #     Cat.new(name, self)
 #   end
+binding.pry
 
 def buy_dog
-  binding.pry
-
 end
 
 def walk_dogs
