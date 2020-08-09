@@ -56,6 +56,8 @@ def walk_dogs
 end
 
 def feed_cats
+  self.cats.select {|cat| cat.mood = "happy"}
+
 end
 
 def sell_pets
