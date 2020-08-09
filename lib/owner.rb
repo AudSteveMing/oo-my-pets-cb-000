@@ -37,14 +37,15 @@ def dogs
   Dog.all.select {|dogs| dogs.owner == self}
 end
 
-def buy_cat(name)
-  new_owner = Cat.all.find {|cat| cat.name == name}
-  new_owner.owner = self if new_owner
-end
-
 # def buy_cat(name)
-#     Cat.new(name, self)
-#   end
+#   new_owner = Cat.all.find {|cat| cat.name == name}
+#   new_owner.owner = self if new_owner
+# end
+
+def buy_cat(name)
+    Cat.new(name, self)
+  end
+  
 def buy_dog
 end
 
